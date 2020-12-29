@@ -12,4 +12,5 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 ```shell
 git config --global init.defaultBranch main
+git config --global push.default current
 ```
