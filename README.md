@@ -23,5 +23,6 @@
     ```shell
     git config --global init.defaultBranch main
     git config --global push.default current
+    git config --global core.ignorecase false
     ```
 
