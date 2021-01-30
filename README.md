@@ -25,4 +25,12 @@
     git config --global push.default current
     git config --global core.ignorecase false
     ```
+    
+## Set up
 
+After creating an SSH key and adding it to GitHub, run the following:
+
+```shell
+git clone git@github.com:natemoo-re/dotfiles.git dotfiles
+mv dotfiles/* ~
+```
