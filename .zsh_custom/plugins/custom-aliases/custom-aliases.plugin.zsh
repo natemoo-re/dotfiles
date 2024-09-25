@@ -37,6 +37,17 @@ cdf() {
 	fi
 }
 
+sha() {
+	value=$(git rev-parse --short HEAD 2>/dev/null)
+	if [ $? -ne 0 ]; then
+		echo "\e[31m▲ Unable to detect latest commit!\e[0m\n\e[2m  Is\e[0m \e[36m$(basename "$PWD")\e[0m \e[2ma git repository?\e[0m" >&2
+		return
+	fi
+
+	echo $value | pbcopy
+	echo "\e[32m●\e[0m Copied \e[36m$value\e[0m to clipboard!"
+}
+
 alias open='open -a Finder ./'
 
 export VISUAL=code
