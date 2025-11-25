@@ -1,7 +1,7 @@
 # nmoo dotfiles
 
 ## Tools
-- [`hyper`](https://hyper.is/) for terminal
+- [`ghostty`](https://ghostty.org/) for terminal
 - [`Code`](https://code.visualstudio.com/) for editor
 - [`oh-my-zsh`](https://ohmyz.sh/) to manage `zsh` config
     ```shell
